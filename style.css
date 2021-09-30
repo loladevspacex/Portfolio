@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Yaldevi:wght@200;600&display=swap'); 
+
+
+body {
+ background-image: url("https://www.teahub.io/photos/full/73-737926_wallpaper-pink-blue-gradient-linear-light-sky-blue.jpg");
+font-family:  'Yaldevi', sans-serif;
+}
+
+.container {
+  background:#FFFAFA;
+  color: #1C1C1C;
+  margin: 80px;
+  border-radius: 20px;
+  box-shadow: 0px 0px 0px #d0f0fc;
+  padding: 64px;
+}
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+}
+.perfil {
+  display: flex;
+  align-items: center;
+}
+.imagem {
+  width: 140px;
+  border-radius: 460px
+}
+.titulo {
+  margin-left: 16px;
+  margin: 10px;
+}
+.titulo h1 {
+  font-weight: 600;
+  font-size: 30px;
+}
+.titulo h3 {
+  font-weight: 200;
+  font-size: 20px;
+}
+.theme button {
+  align-self: flex-end;
+  font-weight: 300;
+  font-size: 20px;
+  padding: 8px 16px;
+  background: #e6eeff;
+  border-radius: 100px;
+  border: 2px solid #080d17;
+  box-shadow: 0px 3px 6px #6a6c6e;
+    
+  }
+.projetos {
+  display: flex;
+  flex-direction: column;
+  font-weight: 600;
+    max-width: 800px;
+  margin: 90px auto;
+  padding: 70px;
+  background-color: #FEC8D8;
+  color:#1C1C1C9;
+  box-shadow: 2px 2px 4px rgba(16, 16, 16, 0.42);
+  border-radius: 20px;
+}
+.projetos p {
+  font-size:24px;
+  margin: -1px
+}
+.projetos-nomes {
+   list-style-type: none;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 39px;
+}
+.projetos-nomes a {
+  text-decoration: none;
+  color: black;
+  
+}
+.linkedin {
+ width: 28px;
+  position: absolute;
+  top: 181px;
+  right: 700px;
+}
+.github {
+  width: 28px;
+  position: absolute;
+  top: 181px;
+  right: 670px;
+}
+.dark {
+background:#5dc6ed;
+}
+.dark .container {
+  background: black;
+  color:white;
+   box-shadow: 6px 6px 6px #7da4b3;
+}
+.dark .projetos {
+  background-color:#79d0f0;
+}
+.dark .projetos-nomes a {
+  color:white;
+}
+.dark .theme button {
+  background: #1c1c1c;
+  color: #e6e6e6;
+  border: 2px solid #e6e6e6;
+}
+input[type="checkbox"] {
+  height: 0;
+  width: 0;
+  visibility: hidden;
+}
+label {
+  cursor: pointer;
+  text-indent: -9999px;
+  width: 50px;
+  height: 30px;
+  background:black;
+  display: block;
+  border-radius: 100px;
+  position: relative;
+}
+
+label:after {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 90px;
+  transition: 0.2s;
+}
+
+input:checked + label {
+  background:#79d0f0;
+}
+
+input:checked + label:after {
+  left: calc(100% - 5px);
+  transform: translateX(-100%);
+}
+
+label:active:after {
+  width: 40px;
+}
